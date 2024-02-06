@@ -1,0 +1,100 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  min-height: 80vh;
+  min-width: 70vw;
+  background-color: var(--light-black-color);
+  border-radius: 2rem;
+  padding: 2.5rem 3rem;
+  box-shadow: rgba(176, 176, 176, 0.24) 0px 3px 8px;
+}
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: row;
+  gap: 2rem;
+  width: -webkit-fill-available;
+}
+.left {
+  flex: 1;
+  min-width: 300px;
+  width: -webkit-fill-available;
+}
+.right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  width: -webkit-fill-available;
+}
+.left > img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.input-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.4rem;
+  width: -webkit-fill-available;
+}
+.input-area > label {
+  cursor: pointer;
+  color: var(--white-color);
+  font-size: 1.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  width: -webkit-fill-available;
+}
+.input-area > input {
+  outline: none;
+  border: none;
+  color: black;
+  font-size: var(--ft-500);
+  border: 1px solid #e0e0e0;
+  padding: 0.8rem 1rem;
+  border-radius: 0.5rem;
+  width: -webkit-fill-available;
+}
+.sign-message > button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  background-color: var(--btn-color);
+  color: #333;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+  min-width: 200px;
+}
+.sign-message > button:hover {
+  background-color: var(--btn-active-color);
+}
+@media screen and (max-width: 940px) {
+  .container {
+    height: 80vh;
+    overflow-y: scroll;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .box {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .left {
+    width: 200px;
+  }
+}
+@media screen and (max-width: 840px) {
+  .container {
+    width: 90vw;
+  }
+}

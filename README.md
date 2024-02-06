@@ -1,1 +1,1 @@
-# blockchain-starter-kit
+# Blockchain starter kit

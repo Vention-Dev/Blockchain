@@ -1,0 +1,113 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-primary);
+  max-width: 1800px;
+  margin: auto;
+}
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+:root {
+  --primary-color: #82bc3b;
+  --black-color: #000000;
+  --light-black-color: #444;
+  --white-color: #ffffff;
+  --light-gray-color: #f5f5f5;
+
+  --btn-color: #82bc3b;
+  --btn-active-color: #66900d;
+
+  --bg-primary: #ffffff;
+  --paragraph: #77798f;
+
+  --b-pad: 4rem;
+  --stock: #2a2b3a;
+
+  /* font size */
+  --ft-300: 12px;
+  --ft-350: 14px;
+  --ft-400: 16px;
+  --ft-450: 18px;
+  --ft-500: 20px;
+  --ft-600: 24px;
+  --ft-650: 26px;
+  --ft-700: 28px;
+  --ft-800: 40px;
+  --ft-900: 54px;
+
+  --background-color-account: linear-gradient(
+    126deg,
+    #010314 4.79%,
+    #2a2b3a 54.4%
+  );
+}
+
+.spin {
+  position: relative;
+}
+.spin {
+  animation: 1.5s linear infinite spinner;
+  animation-play-state: inherit;
+  border: solid 5px var(--light-black-color);
+  border-bottom-color: var(--primary-color);
+  border-radius: 50%;
+  content: "";
+  height: 30px;
+  width: 30px;
+  margin: 0 2rem;
+  transform: translate3d(0, 0, 0);
+  will-change: transform;
+}
+@keyframes spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.page-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.page-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+}
+.pop-up {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+}
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.main-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  background: var(--background-color-account);
+  min-height: 91.5vh;
+}
